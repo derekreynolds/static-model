@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity StaticModel.
+    -->
+    <changeSet id="20160819173013-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="static_model_group_id"
+                                 baseTableName="static_model"
+                                 constraintName="fk_staticmodel_staticmodelgroup_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="static_model_group"/>
+
+    </changeSet>
+</databaseChangeLog>

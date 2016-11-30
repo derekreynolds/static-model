@@ -1,0 +1,30 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "staticModel",
+            "otherEntityName": "staticModel",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "staticModelGroup"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "groupName",
+            "fieldType": "String"
+		"fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "2",
+            "fieldValidateRulesMaxlength": "100"
+        }
+    ],
+    "changelogDate": "20160819172849",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "static_model_group",
+    "pagination": "pagination",
+    "microserviceName": "staticmodel",
+    "searchEngine": "no"
+}

@@ -1,0 +1,40 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "staticModelGroup",
+            "otherEntityName": "staticModelGroup",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "staticModelLocaleText",
+            "otherEntityName": "staticModelLocaleText",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "staticModel"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "ordinal",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "staticKey",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "2",
+            "fieldValidateRulesMaxlength": "100"
+        }
+    ],
+    "changelogDate": "20160819173013",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "static_model",
+    "pagination": "pagination",
+    "microserviceName": "staticmodel",
+    "searchEngine": "no"
+}

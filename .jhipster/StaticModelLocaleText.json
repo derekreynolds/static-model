@@ -1,0 +1,41 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "staticModel",
+            "otherEntityName": "staticModel",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "locale",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "2",
+            "fieldValidateRulesMaxlength": "6"
+        },
+        {
+            "fieldName": "modelText",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "1",
+            "fieldValidateRulesMaxlength": "255"
+        }
+    ],
+    "changelogDate": "20160819180232",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "static_model_locale_text",
+    "pagination": "no",
+    "microserviceName": "staticmodel",
+    "searchEngine": "no"
+}
